@@ -1,0 +1,36 @@
+<!Using HTML, CSS create a rotate effect for the image on hover>
+
+<!DOCTYPE html>
+ <html>
+<head>
+    <title>Using HTML, CSS create a rotate effect for the image on hover</title>
+    <style> 
+        .hover-rotate {
+          overflow: hidden;
+          margin: 8px;
+          min-width: 240px;
+          max-width: 320px;
+          width: 100%;
+        }
+        
+        .hover-rotate img {
+          transition: all 0.3s;
+          box-sizing: border-box;
+          max-width: 100%;
+        }
+        
+        .hover-rotate:hover img {
+          transform: scale(1.3) rotate(5deg);
+        }
+        </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+ 
+</head>
+<body>
+  <strong>Preview:</strong><br>
+<figure class="hover-rotate">
+  <img src="https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/flower-2.jpeg" height="256" width="256"/></figure>
+</body>
+</html>
